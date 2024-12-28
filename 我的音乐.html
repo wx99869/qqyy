@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				list-style: none;
+				font-family: '微软雅黑';
+				text-decoration: none;
+			}
+
+			.dht {
+				width: 100%;
+				height: 60px;
+				background-color: #ffffff;
+			}
+
+			.dht img {
+				width: 170px;
+				margin-left: 10%;
+			}
+
+			.dht ul {
+				float: right;
+				width: 70%;
+				margin-right: 35px;
+			}
+
+			.dht ul li {
+				height: 60px;
+				line-height: 50px;
+				float: left;
+				width: 10%;
+				padding-left: 1px;
+				position: relative;
+			}
+
+			.dht ul li:hover {
+				background-color: #31c27c;
+			}
+
+			.dht ul li a {
+				color: #000000;
+				font-size: 18px;
+				display: block;
+				width: 100%;
+				height: 100%;
+				text-align: center;
+			}
+
+			.zhuti {
+				width: 100%;
+				height: 380px;
+				background: url(img/bg_profile.bd497b5a.webp) no-repeat;
+				background-size: 100% 380px;
+				position: relative;
+
+			}
+
+			.tx {
+				text-align: center;
+
+
+			}
+
+			.tx img:hover {
+				transform: rotateY(30000060deg);
+			}
+
+			.tx1 {
+				height: 100px;
+				border-radius: 50%;
+				margin-top: 65px;
+				border: 4px solid #ffffff;
+				transition: all 5s linear 0s;
+			}
+
+
+			.svip {
+				width: 59px;
+				margin: 0 auto;
+				margin-top: 5px;
+
+			}
+
+			.svip1 {
+				width: 35px;
+				float: left;
+				margin-right: 5px;
+
+			}
+
+			.svip2 {
+				width: 19px;
+				float: right;
+
+			}
+
+			.shuju {
+				width: 100%;
+				display: inline-block;
+				text-align: center;
+				margin-top: 15px;
+
+
+
+			}
+
+			.shuju li {
+				display: inline-block;
+				color: #ffffff;
+				font-weight: 100;
+				font-size: 14px;
+
+			}
+
+			.shuju strong:hover {
+				color: #31c27c;
+
+
+			}
+
+			.dht2 {
+				width: 80%;
+				margin-left: 10%;
+				margin-top: 85px;
+
+
+			}
+
+			.dht2 li {
+				display: inline-block;
+				color: #ffffff;
+				padding-left: 40px;
+				font-size: 16px;
+				font-weight: 200;
+			}
+
+			.dht2 li:hover {
+				color: #31c27c;
+
+			}
+
+			.dht3 {
+				width: 80%;
+				margin-left: 10%;
+				margin-top: 30px;
+
+
+			}
+
+			.dht3 ul li {
+				display: inline-block;
+				color: #000000;
+				padding-left: 40px;
+				font-size: 16px;
+				font-weight: 100;
+			}
+
+			.dht3 li:hover {
+				color: #31c27c;
+
+
+			}
+
+			.dht4 ul {
+				margin-left: 13%;
+				list-style: none;
+				padding: 0;
+				display: flex;
+				margin-top: 50px;
+
+			}
+
+			.dht4 li {
+				margin-right: 10px;
+			}
+
+			.dht4 span:hover {
+				color: #31c27c;
+
+
+			}
+
+			.dht4-1 {
+				background-color: #f5f5f5;
+				border: 1px solid #e0e0e0;
+				border-radius: 4px;
+				padding: 5px 15px;
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+			}
+
+			.dht4-1 img {
+				width: 16px;
+				margin-right: 8px;
+			}
+
+			.dht4-1 span {
+				color: #333;
+				font-size: 14px;
+			}
+
+			.dht4-2 {
+				background-color: #31c27c;
+				border-color: #31c27c;
+
+			}
+
+			.dht4-2 span {
+				color: #fff;
+			}
+
+
+			.gequ {
+				width: 80%;
+				margin-left: 10%;
+				margin-top: 15px;
+
+
+			}
+
+			.gequ ul {
+				background-color: #f7f7f7ff;
+				height: 60px;
+
+			}
+
+			.gequ li {
+				display: inline-block;
+				padding-left: 40px;
+				margin-top: 12px;
+				color: #999999;
+				font-weight: 200;
+				font-size: 14px;
+			}
+
+			.ge ol {
+				height: 50px;
+
+			}
+
+			.ge ol li {
+				margin-top: 15px;
+				color: #000000;
+
+			}
+
+			.ge ol li a {
+				color: #000000;
+				font-weight: 100;
+			}
+
+			.ge li:hover {
+				color: #31c27c;
+
+
+			}
+
+			.ge a:hover {
+				color: #31c27c;
+
+
+			}
+
+			.ge ol:nth-child(odd) {
+				background: #f7f7f7ff;
+			}
+
+			.gq {
+				width: 40%;
+
+			}
+
+			.gs {
+				width: 22%;
+			}
+
+			.zj {
+				width: 22%;
+			}
+
+			.yj {
+				font-size: 12px;
+				text-align: center;
+				color: #999999;
+				padding-top: 100px;
+			}
+
+			.yejiao {
+				background-color: #333;
+				height: 200px;
+				margin-top: 20px;
+			}
+
+			.khd {
+				text-align: center;
+				margin-top: 50px;
+
+			}
+.khd p{
+	font-size: 18px;
+}
+			.khd a {
+				display: block;
+				width: 170px;
+				height: 40px;
+				color: #ffffff;
+				background-color: #31c27c;
+				margin: 10px auto 0;
+				font-size: 16px;
+				border-radius: 20px;
+				line-height: 35px;
+			}
+
+
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="dht">
+				<img src="img/logo.png" alt="" />
+				<ul>
+					<li><a href="../缪广臻/首页.html">音乐馆</a></li>
+					<li><a href="#">我的音乐</a></li>
+					<li><a href="../郭颂/歌手.html">歌手</a></li>
+					<li><a href="../张马辉/vip.html">vip</a></li>
+					<li style="margin-right: 20px;"><a href="#">登录</a></li>
+					<p style="margin-top: 15px; " mar><input type="text" placeholder="搜索音乐、MV....." /></p>
+
+
+				</ul>
+			</div>
+
+			<div class="zhuti">
+				<div class="tx">
+					<img class="tx1" src="img/140.jpg" alt="" />
+				</div>
+
+				<div class="svip">
+					<img class="svip1" src="img/svip4.png" alt="" />
+					<img class="svip2" src="img/d-vip1.png" alt="" />
+				</div>
+				<div class="shuju">
+					<ul>
+						<li>
+							<strong>&nbsp;52</strong>
+							<br />&nbsp;<span>关注</span>
+						</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li><strong>&nbsp;66</strong>
+							<br />&nbsp;<span>粉丝</span>
+						</li>
+					</ul>
+				</div>
+				<div class="dht2">
+					<ul>
+						<li>我喜欢</li>
+						<li>我的歌单</li>
+						<li>关注</li>
+						<li>粉丝</li>
+						<li>我的上传的视频</li>
+					</ul>
+				</div>
+				<div class="dht3">
+					<ul>
+						<li>歌曲&nbsp;66</li>
+						<li>歌单&nbsp;0</li>
+						<li>专辑&nbsp;0</li>
+						<li>视频&nbsp;0</li>
+					</ul>
+				</div>
+				<div class="dht4">
+					<ul>
+						<li><button class="dht4-1 dht4-2"><img src="img/播放 (2).png" alt="" /><span>播放全部</span></button>
+						</li>
+						<li><button class="dht4-1"><img src="img/添加到.png" alt="" /><span>添加到</span></button></li>
+						<li><button class="dht4-1"><img src="img/下载 (1).png" alt="" /><span>下载</span></button></li>
+						<li><button class="dht4-1"><img src="img/批量操作.png" alt="" /><span>批量操作</span></button></li>
+					</ul>
+				</div>
+				<div class="gequ">
+					<div>
+						<ul>
+							<li class="gq">歌曲</li>
+							<li class="gs">歌手</li>
+							<li class="zj">专辑</li>
+							<li class="sc">时长</li>
+						</ul>
+					</div>
+					<div class="ge">
+						<ol>
+							<li class="gq"><a href="年少有为.html">年少有为</a></li>
+							<li class="gs"><a href="年少有为.html">李荣浩</a></li>
+							<li class="zj"><a href="年少有为.html">耳朵</a></li>
+							<li class="sc"><a href="年少有为.html">04:30</a></li>
+						</ol>
+						<ol>
+							<li class="gq"><a href="侧脸.html">侧脸 (阿泽版)</a></li>
+							<li class="gs"><a href="侧脸.html">dj冰鹤 /DJ小诗 /阿泽</a></li>
+							<li class="zj"><a href="侧脸.html">侧脸 (DJ 冰鹤版)</a></li>
+							<li class="sc"><a href="侧脸.html">02:07</a></li>
+						</ol>
+						<ol>
+							<li class="gq"><a href="爱错.html">爱错 (Live)</a></li>
+							<li class="gs"><a href="爱错.html">曹杨 /尚雯婕</a></li>
+							<li class="zj"><a href="爱错.html">时光音乐会第四季 第10期</a></li>
+							<li class="sc"><a href="爱错.html">05:56</a></li>
+						</ol>
+						<ol>
+							<li class="gq"><a href="绿色.html">绿色</a></li>
+							<li class="gs"><a href="绿色.html">陈雪凝</a></li>
+							<li class="zj"><a href="绿色.html">绿色</a></li>
+							<li class="sc"><a href="绿色.html">04:29</a></li>
+						</ol>
+						<ol>
+							<li class="gq"><a href="侧脸0.85.html">侧脸 (0.85x)</a></li>
+							<li class="gs"><a href="侧脸0.85.html">流星</a></li>
+							<li class="zj"><a href="侧脸0.85.html">侧脸</a></li>
+							<li class="sc"><a href="侧脸0.85.html">04:56</a></li>
+						</ol>
+						<ol>
+							<li class="gq"><a href="感谢你曾经来过.html">感谢你曾来过</a></li>
+							<li class="gs"><a href="感谢你曾经来过.html">Ayo97 /周思涵</a></li>
+							<li class="zj"><a href="感谢你曾经来过.html">卧龙与酒</a></li>
+							<li class="sc"><a href="感谢你曾经来过.html">04:10</a></li>
+						</ol>
+						<ol>
+							<li class="gq"><a href="淘汰.html">淘汰</a></li>
+							<li class="gs"><a href="淘汰.html">en</a></li>
+							<li class="zj"><a href="淘汰.html">淘汰</a></li>
+							<li class="sc"><a href="淘汰.html">04:13</a></li>
+						</ol>
+						<ol>
+							<li class="gq"><a href="他不懂你的心.html">他不懂你的心 (DJ版)</a></li>
+							<li class="gs"><a href="越来越不懂.html">Wangzihui</a></li>
+							<li class="zj"><a href="越来越不懂.html">Gone Bad</a></li>
+							<li class="sc"><a href="越来越不懂.html">02:41</a></li>
+						</ol>
+						<ol>
+							<li class="gq"><a href="反方向的钟.html">反方向的钟</a></li>
+							<li class="gs"><a href="反方向的钟.html">周杰伦</a></li>
+							<li class="zj"><a href="反方向的钟.html">Jay</a></li>
+							<li class="sc"><a href="反方向的钟.html">04:18</a></li>
+						</ol>
+						<ol>
+							<li class="gq"><a href="越来越不懂.html">越来越不懂</a></li>
+							<li class="gs"><a href="越来越不懂.html">蔡健雅</a></li>
+							<li class="zj"><a href="越来越不懂.html">Close To 蔡健雅 Original.....</a></li>
+							<li class="sc"><a href="越来越不懂.html">03:49</a></li>
+						</ol>
+
+					</div>
+					<div class="khd">
+						<p>查看更多请下载客户端</p>
+						<a href="">立即下载</a>
+					</div>
+				</div>
+				<body>
+					<div class="yejiao">
+						<p class="yj">关于腾讯 | About Tencent | 服务条款 | 用户服务协议 | 隐私政策 | 权利声明 | 广告服务 | 腾讯招聘 | 客服中心 | 网站导航
+							|<br /><br />举报中心Copyright © 1998 - 2024 Tencent. All Rights Reserved. <br /><br />腾讯公司 版权所有
+							| 营业执照 | 网络文化经营许可证：粤网文[2023]2882-203号 | 网络视听许可证1904073号 | 客服电话：4006016666 |
+							违法与不良信息举报邮箱：tme_musicjubao@tencentmusic.com</p>
+				</body>
+</html>
